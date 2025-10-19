@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Ngày Phụ Nữ Việt Nam 20/10 🌸</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Serif:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="wmvn.css">
+</head>
+
+<body>
+    <div class="date-watermark">20·10·2025</div>
+
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcomeScreen" class="welcome-screen">
+            <div class="welcome-stamp">💐</div>
+
+            <h1>Chúc Mừng Ngày<br>Phụ Nữ Việt Nam</h1>
+            <p class="subtitle">20 Tháng 10 - Ngày của những người phụ nữ tuyệt vời</p>
+
+            <div class="welcome-form">
+                <label class="form-label">Kính gửi:</label>
+                <input type="text" id="nameInput" placeholder="Nhập tên á..." autocomplete="off">
+            </div>
+
+            <button class="btn" onclick="showCard()">Mở lá thư</button>
+        </div>
+
+        <!-- Card Screen -->
+        <div id="cardScreen" class="card-screen">
+            <!-- Pink Ribbon -->
+            <div class="ribbon-container">
+                <svg viewBox="0 0 150 400" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="ribbonGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#F8D8D8;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#FFB6C1;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#F8D8D8;stop-opacity:1" />
+                        </linearGradient>
+                        <filter id="ribbonShadow">
+                            <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+                            <feOffset dx="2" dy="3" result="offsetblur" />
+                            <feComponentTransfer>
+                                <feFuncA type="linear" slope="0.3" />
+                            </feComponentTransfer>
+                            <feMerge>
+                                <feMergeNode />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <path d="M 75 0 Q 60 50 75 100 Q 90 150 75 200 Q 60 250 75 300 Q 85 350 75 400" fill="none"
+                        stroke="url(#ribbonGradient)" stroke-width="35" filter="url(#ribbonShadow)" opacity="0.9" />
+                    <path d="M 75 0 Q 65 50 75 100 Q 85 150 75 200 Q 65 250 75 300 Q 80 350 75 400" fill="none"
+                        stroke="#FFF8F2" stroke-width="8" opacity="0.4" />
+                </svg>
+            </div>
+
+            <!-- Envelope Background -->
+            <div class="envelope-background">
+                <svg viewBox="0 0 450 300" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <filter id="envelopeShadow">
+                            <feGaussianBlur in="SourceAlpha" stdDeviation="5" />
+                            <feOffset dx="3" dy="5" result="offsetblur" />
+                            <feComponentTransfer>
+                                <feFuncA type="linear" slope="0.4" />
+                            </feComponentTransfer>
+                            <feMerge>
+                                <feMergeNode />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <!-- Envelope body -->
+                    <rect x="10" y="10" width="430" height="280" rx="10" fill="#D5C6A1" filter="url(#envelopeShadow)" />
+                    <rect x="15" y="15" width="420" height="270" rx="8" fill="#E3D5B7" />
+                    <!-- Envelope flap -->
+                    <path d="M 15 15 L 225 140 L 435 15 Z" fill="#C9BBA0" opacity="0.7" />
+                    <!-- Wax seal -->
+                    <circle cx="225" cy="150" r="35" fill="#8B4513" />
+                    <circle cx="225" cy="150" r="30" fill="#A0522D" />
+                    <text x="225" y="160" text-anchor="middle" font-family="Playfair Display" font-size="24"
+                        fill="#FFF8F2" font-weight="bold">2010</text>
+                </svg>
+            </div>
+
+            <!-- Main Letter -->
+            <div class="letter-card">
+                <!-- Bouquet top -->
+                <div class="bouquet-top">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M100 160 L60 190 Q100 198 140 190 Z" fill="#FFE0A6" stroke="#D4AF37"
+                            stroke-width="1.5" />
+                        <path d="M100 160 L70 185 Q100 193 100 160" fill="#FFF5CC" opacity="0.7" />
+                        <line x1="100" y1="160" x2="70" y2="95" stroke="#5DA271" stroke-width="2.5" />
+                        <line x1="100" y1="160" x2="130" y2="90" stroke="#5DA271" stroke-width="2.5" />
+                        <line x1="100" y1="160" x2="100" y2="80" stroke="#5DA271" stroke-width="2.5" />
+                        <ellipse cx="80" cy="115" rx="6" ry="20" fill="#7BC96F" transform="rotate(-30 80 115)" />
+                        <ellipse cx="120" cy="110" rx="6" ry="20" fill="#8DD67C" transform="rotate(30 120 110)" />
+                        <!-- Tulips -->
+                        <ellipse cx="70" cy="95" rx="10" ry="15" fill="#FFB6C1" transform="rotate(-15 70 95)" />
+                        <ellipse cx="75" cy="95" rx="10" ry="15" fill="#FFB6C1" transform="rotate(15 75 95)" />
+                        <ellipse cx="130" cy="90" rx="10" ry="15" fill="#FF85A8" transform="rotate(-10 130 90)" />
+                        <ellipse cx="135" cy="90" rx="10" ry="15" fill="#FF85A8" transform="rotate(10 135 90)" />
+                        <ellipse cx="100" cy="80" rx="10" ry="15" fill="#FFE066" transform="rotate(-5 100 80)" />
+                        <ellipse cx="105" cy="80" rx="10" ry="15" fill="#FFE066" transform="rotate(5 105 80)" />
+                    </svg>
+                </div>
+
+                <!-- Bouquet left -->
+                <div class="bouquet-left">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M100 160 L60 190 Q100 198 140 190 Z" fill="#FFE0A6" stroke="#D4AF37"
+                            stroke-width="1.5" />
+                        <path d="M100 160 L70 185 Q100 193 100 160" fill="#FFF5CC" opacity="0.7" />
+                        <line x1="100" y1="160" x2="75" y2="100" stroke="#5DA271" stroke-width="2.5" />
+                        <line x1="100" y1="160" x2="125" y2="95" stroke="#5DA271" stroke-width="2.5" />
+                        <line x1="100" y1="160" x2="100" y2="85" stroke="#5DA271" stroke-width="2.5" />
+                        <ellipse cx="85" cy="120" rx="6" ry="18" fill="#7BC96F" transform="rotate(-25 85 120)" />
+                        <ellipse cx="115" cy="115" rx="6" ry="18" fill="#8DD67C" transform="rotate(25 115 115)" />
+                        <!-- Tulips -->
+                        <ellipse cx="75" cy="100" rx="9" ry="14" fill="#FF9AA2" transform="rotate(-12 75 100)" />
+                        <ellipse cx="80" cy="100" rx="9" ry="14" fill="#FF9AA2" transform="rotate(12 80 100)" />
+                        <ellipse cx="125" cy="95" rx="9" ry="14" fill="#FFB6C1" transform="rotate(-8 125 95)" />
+                        <ellipse cx="130" cy="95" rx="9" ry="14" fill="#FFB6C1" transform="rotate(8 130 95)" />
+                        <ellipse cx="100" cy="85" rx="9" ry="14" fill="#FF6B9D" transform="rotate(-5 100 85)" />
+                        <ellipse cx="105" cy="85" rx="9" ry="14" fill="#FF6B9D" transform="rotate(5 105 85)" />
+                    </svg>
+                </div>
+
+                <!-- Bouquet bottom left -->
+                <div class="bouquet-bottom-left">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M100 160 L60 190 Q100 198 140 190 Z" fill="#FFE0A6" stroke="#D4AF37"
+                            stroke-width="1.5" />
+                        <path d="M100 160 L70 185 Q100 193 100 160" fill="#FFF5CC" opacity="0.7" />
+                        <line x1="100" y1="160" x2="80" y2="105" stroke="#5DA271" stroke-width="2.5" />
+                        <line x1="100" y1="160" x2="120" y2="100" stroke="#5DA271" stroke-width="2.5" />
+                        <line x1="100" y1="160" x2="100" y2="90" stroke="#5DA271" stroke-width="2.5" />
+                        <ellipse cx="90" cy="125" rx="6" ry="18" fill="#7BC96F" transform="rotate(-28 90 125)" />
+                        <ellipse cx="110" cy="120" rx="6" ry="18" fill="#8DD67C" transform="rotate(28 110 120)" />
+                        <!-- Tulips -->
+                        <ellipse cx="80" cy="105" rx="9" ry="14" fill="#FFE066" transform="rotate(-10 80 105)" />
+                        <ellipse cx="85" cy="105" rx="9" ry="14" fill="#FFE066" transform="rotate(10 85 105)" />
+                        <ellipse cx="120" cy="100" rx="9" ry="14" fill="#FF85A8" transform="rotate(-8 120 100)" />
+                        <ellipse cx="125" cy="100" rx="9" ry="14" fill="#FF85A8" transform="rotate(8 125 100)" />
+                        <ellipse cx="100" cy="90" rx="9" ry="14" fill="#FFB6C1" transform="rotate(-6 100 90)" />
+                        <ellipse cx="105" cy="90" rx="9" ry="14" fill="#FFB6C1" transform="rotate(6 105 90)" />
+                    </svg>
+                </div>
+
+                <div class="letter-header">
+                    <h2>Chúc Mừng Ngày<br>Phụ Nữ Việt Nam</h2>
+                </div>
+
+                <div class="letter-body">
+                    <p class="greeting">Chào <span class="nameInLetter"></span> xinh đẹp,</p>
+                    <br>
+                    <p>Thay mặt cánh mày râu Việt Nam, tôi xin được gửi đến <span class="nameInLetter"></span>
+                        những lời chúc chân thành và ấm áp nhất !</p>
+                    <br>
+                    <p>Chúc cho <span class="nameInLetter"></span> luôn rạng rỡ như đóa hoa mùa thu –
+                        không chỉ bởi vẻ đẹp bên ngoài mà còn bởi tâm hồn dịu dàng, mạnh mẽ và đầy yêu thương.</p>
+                    <br>
+                    <p>Cuộc sống đôi khi vội vã, nhưng mong rằng <span class="nameInLetter"></span>
+                        luôn giữ được nụ cười, niềm tin và lòng tự hào về chính mình.
+                        Dù ở đâu hay làm gì, hãy luôn giữ tinh thần lạc quan và yêu bản thân là điều trên hết</p>
+                    <br>
+                    <p>Xin cảm ơn vì sự hiện diện của <span class="nameInLetter"></span> –
+                        như một bông hoa khiến thế giới trở nên dịu dàng và đáng yêu hơn. 💐</p>
+                </div>
+                <div class="letter-footer">
+                    <p>Trân Trọng.</p>
+                </div>
+
+                <div class="share-section">
+                    <button class="share-btn" onclick="shareCard()">📤 Chia sẻ lời chúc</button>
+                    <button class="share-btn" onclick="showQRModal()">🎁 Gửi cho người khác</button>
+                </div>
+            </div>
+
+            <!-- Bouquet at bottom right -->
+            <div class="bouquet">
+                <svg viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Giấy gói hoa -->
+                    <path d="M125 200 L60 240 Q125 250 190 240 Z" fill="#FFE0A6" stroke="#D4AF37" stroke-width="2" />
+                    <path d="M125 200 L70 235 Q125 245 125 200" fill="#FFF5CC" opacity="0.7" />
+                    <path d="M125 200 L180 235 Q125 245 125 200" fill="#FFF5CC" opacity="0.7" />
+
+                    <!-- Cành hoa tulip -->
+                    <line x1="125" y1="200" x2="85" y2="115" stroke="#5DA271" stroke-width="3" />
+                    <line x1="125" y1="200" x2="165" y2="110" stroke="#5DA271" stroke-width="3" />
+                    <line x1="125" y1="200" x2="125" y2="95" stroke="#5DA271" stroke-width="3" />
+                    <line x1="125" y1="200" x2="105" y2="130" stroke="#5DA271" stroke-width="2.5" />
+                    <line x1="125" y1="200" x2="145" y2="125" stroke="#5DA271" stroke-width="2.5" />
+
+                    <!-- Lá tulip -->
+                    <ellipse cx="100" cy="160" rx="8" ry="25" fill="#7BC96F" transform="rotate(-30 100 160)" />
+                    <ellipse cx="150" cy="155" rx="8" ry="25" fill="#7BC96F" transform="rotate(30 150 155)" />
+                    <ellipse cx="90" cy="145" rx="7" ry="22" fill="#8DD67C" transform="rotate(-40 90 145)" />
+                    <ellipse cx="160" cy="140" rx="7" ry="22" fill="#8DD67C" transform="rotate(40 160 140)" />
+
+                    <!-- Tulip 1 (hồng đậm) -->
+                    <ellipse cx="85" cy="115" rx="12" ry="18" fill="#FF6B9D" transform="rotate(-15 85 115)" />
+                    <ellipse cx="85" cy="115" rx="10" ry="16" fill="#FF8FAD" transform="rotate(-15 85 115)" />
+                    <ellipse cx="90" cy="115" rx="12" ry="18" fill="#FF6B9D" transform="rotate(15 90 115)" />
+                    <path d="M85 115 Q85 105 85 100 Q85 105 90 115" fill="#FFB3C6" />
+
+                    <!-- Tulip 2 (vàng) -->
+                    <ellipse cx="165" cy="110" rx="12" ry="18" fill="#FFE066" transform="rotate(-15 165 110)" />
+                    <ellipse cx="165" cy="110" rx="10" ry="16" fill="#FFED99" transform="rotate(-15 165 110)" />
+                    <ellipse cx="170" cy="110" rx="12" ry="18" fill="#FFE066" transform="rotate(15 170 110)" />
+                    <path d="M165 110 Q165 100 165 95 Q165 100 170 110" fill="#FFF5CC" />
+
+                    <!-- Tulip 3 (hồng giữa) -->
+                    <ellipse cx="125" cy="95" rx="12" ry="18" fill="#FF85A8" transform="rotate(-10 125 95)" />
+                    <ellipse cx="125" cy="95" rx="10" ry="16" fill="#FFA3BE" transform="rotate(-10 125 95)" />
+                    <ellipse cx="130" cy="95" rx="12" ry="18" fill="#FF85A8" transform="rotate(10 130 95)" />
+                    <path d="M125 95 Q125 85 125 80 Q125 85 130 95" fill="#FFBDD0" />
+
+                    <!-- Tulip 4 (hồng cam) -->
+                    <ellipse cx="105" cy="130" rx="11" ry="16" fill="#FF9AA2" transform="rotate(-20 105 130)" />
+                    <ellipse cx="105" cy="130" rx="9" ry="14" fill="#FFB3BA" transform="rotate(-20 105 130)" />
+                    <ellipse cx="110" cy="130" rx="11" ry="16" fill="#FF9AA2" transform="rotate(10 110 130)" />
+                    <path d="M105 130 Q105 122 105 118 Q105 122 110 130" fill="#FFC9CE" />
+
+                    <!-- Tulip 5 (hồng nhạt) -->
+                    <ellipse cx="145" cy="125" rx="11" ry="16" fill="#FFB6C1" transform="rotate(-15 145 125)" />
+                    <ellipse cx="145" cy="125" rx="9" ry="14" fill="#FFC9D4" transform="rotate(-15 145 125)" />
+                    <ellipse cx="150" cy="125" rx="11" ry="16" fill="#FFB6C1" transform="rotate(15 150 125)" />
+                    <path d="M145 125 Q145 117 145 113 Q145 117 150 125" fill="#FFD4DD" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- QR Code Modal -->
+    <div id="qrModal" class="qr-modal">
+        <div class="qr-content">
+            <button class="close-modal" onclick="closeQRModal()">×</button>
+            <h3>Gửi thiệp cho bạn bè 🌸</h3>
+            <p>Quét mã QR hoặc chia sẻ link để gửi thiệp chúc mừng 20/10</p>
+
+            <div class="qr-code-container">
+                <div id="qrcode"></div>
+            </div>
+
+            <div class="link-container">
+                <div class="link-text" id="shareLink"></div>
+            </div>
+
+            <div class="modal-buttons">
+                <button class="modal-btn" onclick="copyLink()">📋 Copy Link</button>
+                <button class="modal-btn secondary" onclick="closeQRModal()">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="wmvn.js"></script>
+</body>
+
+</html>
